@@ -2,7 +2,7 @@
 
 import numpy as np
 from pathlib import Path
-from tokenizer import Tokenizer
+from cs336_basics.tokenizer import Tokenizer
 
 
 def compute_compression_ratio(tokenizer: Tokenizer, text: str) -> dict:
