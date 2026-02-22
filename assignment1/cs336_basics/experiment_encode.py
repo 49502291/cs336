@@ -133,10 +133,10 @@ def encode_datasets():
     # Define datasets to encode
     datasets = [
         # (tokenizer, input_file, output_file)
-        #(ts_tokenizer, "TinyStoriesV2-GPT4-train.txt", "tinystories_train.npy"),
-        (ts_tokenizer, "TinyStoriesV2-GPT4-valid.txt", "tinystories_valid.npy"),
+        (ts_tokenizer, "TinyStoriesV2-GPT4-train.txt", "tinystories_train.npy"),
+        #(ts_tokenizer, "TinyStoriesV2-GPT4-valid.txt", "tinystories_valid.npy"),
         #(owt_tokenizer, "owt_train.txt", "owt_train.npy"),
-        (owt_tokenizer, "owt_valid.txt", "owt_valid.npy"),
+        #(owt_tokenizer, "owt_valid.txt", "owt_valid.npy"),
     ]
     
     results = []
