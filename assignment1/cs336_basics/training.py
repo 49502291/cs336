@@ -374,13 +374,15 @@ def main():
         start_iter = load_checkpoint(args.resume, model, optimizer)
         print(f"Resumed from {args.resume} at step {start_iter}")
 
-    os.makedirs(args.checkpoint_dir, exist_ok=True)
-
     # ------------------------------------------------------------------
     # Experiment logger
     # ------------------------------------------------------------------
     run_name = args.run_name or time.strftime("%Y%m%d_%H%M%S")
     log_path = os.path.join(args.log_dir, f"{run_name}.jsonl")
+
+    checkpoint_dir = os.path.join(args.checkpoint_dir, run_name)
+    os.makedirs(checkpoint_dir, exist_ok=True)
+
     logger = ExperimentLogger(
         log_path,
         append=(args.resume is not None),
@@ -461,12 +463,12 @@ def main():
 
             # Checkpoint
             if (step + 1) % args.checkpoint_interval == 0:
-                ckpt = os.path.join(args.checkpoint_dir, f"checkpoint_{step+1:07d}.pt")
+                ckpt = os.path.join(checkpoint_dir, f"checkpoint_{step+1:07d}.pt")
                 save_checkpoint(model, optimizer, step + 1, ckpt)
                 print(f"  [checkpoint] {ckpt}")
 
         # Final checkpoint
-        ckpt = os.path.join(args.checkpoint_dir, "checkpoint_final.pt")
+        ckpt = os.path.join(checkpoint_dir, "checkpoint_final.pt")
         save_checkpoint(model, optimizer, args.max_iters, ckpt)
         print(f"Done. Final checkpoint: {ckpt}")
 
