@@ -1,2 +1,3 @@
-assignment1/data/TinyStoriesV2-GPT4-valid.txt filter=lfs diff=lfs merge=lfs -text
+assignment1/checkpoints/bs_64/*.pt filter=lfs diff=lfs merge=lfs -text
+assignment1/checkpoints/lr_3e-3/*.pt filter=lfs diff=lfs merge=lfs -text
 assignment1/data/encoded/*.npy filter=lfs diff=lfs merge=lfs -text

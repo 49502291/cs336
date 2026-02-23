@@ -1,0 +1,68 @@
+rameters: 22,696,448
+Logging to: logs/bs_128.jsonl
+step100 | loss 3.0079 | lr 1.98e-03 | 8,755 tok/s | 374.3s
+step200 | loss 2.4559 | lr 3.98e-03 | 9,438 tok/s | 721.5s
+step300 | loss 2.3121 | lr 5.98e-03 | 9,511 tok/s | 1066.0s
+step400 | loss 2.2971 | lr 7.98e-03 | 9,425 tok/s | 1413.7s
+step500 | loss 2.1290 | lr 9.98e-03 | 9,245 tok/s | 1768.1s
+[val] step500 | val_loss 2.1255 | 1768.1s
+step600 | loss 1.9956 | lr 9.99e-03 | 8,632 tok/s | 2147.7s
+step700 | loss 2.0448 | lr 9.96e-03 | 9,494 tok/s | 2492.9s
+step800 | loss 1.8687 | lr 9.90e-03 | 9,501 tok/s | 2837.8s
+step900 | loss 1.8515 | lr 9.83e-03 | 9,525 tok/s | 3181.8s
+step1000 | loss 1.7928 | lr 9.73e-03 | 9,511 tok/s | 3526.3s
+  [val] step1000 | val_loss 1.8204 | 3526.3s
+[checkpoint] checkpoints/bs_128/checkpoint_0001000.pt
+step1100 | loss 1.8707 | lr 9.61e-03 | 8,911 tok/s | 3894.1s
+step1200 | loss 1.7786 | lr 9.47e-03 | 9,374 tok/s | 4243.6s
+step1300 | loss 1.6793 | lr 9.32e-03 | 9,386 tok/s | 4592.7s
+step1400 | loss 1.8333 | lr 9.14e-03 | 9,345 tok/s | 4943.4s
+step1500 | loss 1.7325 | lr 8.95e-03 | 9,461 tok/s | 5289.7s
+[val] step1500 | val_loss 1.7331 | 5289.7s
+step1600 | loss 1.7605 | lr 8.74e-03 | 8,884 tok/s | 5658.6s
+step1700 | loss 1.7187 | lr 8.51e-03 | 9,477 tok/s | 6004.3s
+step1800 | loss 1.6835 | lr 8.27e-03 | 9,459 tok/s | 6350.8s
+step1900 | loss 1.6671 | lr 8.02e-03 | 9,364 tok/s | 6700.7s
+step2000 | loss 1.6624 | lr 7.75e-03 | 9,322 tok/s | 7052.2s
+  [val] step2000 | val_loss 1.6705 | 7052.2s
+[checkpoint] checkpoints/bs_128/checkpoint_0002000.pt
+step2100 | loss 1.6613 | lr 7.48e-03 | 8,828 tok/s | 7423.4s
+step2200 | loss 1.6779 | lr 7.19e-03 | 9,360 tok/s | 7773.5s
+step2300 | loss 1.6792 | lr 6.89e-03 | 9,389 tok/s | 8122.5s
+step2400 | loss 1.5962 | lr 6.59e-03 | 9,375 tok/s | 8472.1s
+step2500 | loss 1.6158 | lr 6.28e-03 | 9,281 tok/s | 8825.1s
+[val] step2500 | val_loss 1.6243 | 8825.1s
+step2600 | loss 1.5916 | lr 5.97e-03 | 8,884 tok/s | 9194.0s
+step2700 | loss 1.6192 | lr 5.66e-03 | 9,493 tok/s | 9539.1s
+step2800 | loss 1.6032 | lr 5.35e-03 | 9,471 tok/s | 9885.1s
+step2900 | loss 1.6024 | lr 5.03e-03 | 9,296 tok/s | 10237.6s
+step3000 | loss 1.5172 | lr 4.72e-03 | 9,405 tok/s | 10586.1s
+  [val] step3000 | val_loss 1.5740 | 10586.1s
+[checkpoint] checkpoints/bs_128/checkpoint_0003000.pt
+step3100 | loss 1.5454 | lr 4.41e-03 | 8,923 tok/s | 10953.3s
+step3200 | loss 1.5764 | lr 4.11e-03 | 9,496 tok/s | 11298.4s
+step3300 | loss 1.5166 | lr 3.82e-03 | 9,382 tok/s | 11647.6s
+step3400 | loss 1.4808 | lr 3.53e-03 | 9,446 tok/s | 11994.5s
+step3500 | loss 1.4512 | lr 3.25e-03 | 9,444 tok/s | 12341.5s
+[val] step3500 | val_loss 1.5161 | 12341.5s
+step3600 | loss 1.4712 | lr 2.99e-03 | 8,880 tok/s | 12710.5s
+step3700 | loss 1.4399 | lr 2.73e-03 | 9,354 tok/s | 13060.8s
+step3800 | loss 1.5203 | lr 2.49e-03 | 9,397 tok/s | 13409.6s
+step3900 | loss 1.5079 | lr 2.27e-03 | 9,323 tok/s | 13761.0s
+step4000 | loss 1.4905 | lr 2.05e-03 | 9,349 tok/s | 14111.6s
+  [val] step4000 | val_loss 1.4627 | 14111.6s
+[checkpoint] checkpoints/bs_128/checkpoint_0004000.pt
+step4100 | loss 1.4557 | lr 1.86e-03 | 8,794 tok/s | 14484.2s
+step4200 | loss 1.4230 | lr 1.69e-03 | 9,374 tok/s | 14833.8s
+step4300 | loss 1.4358 | lr 1.53e-03 | 9,380 tok/s | 15183.1s
+step4400 | loss 1.3786 | lr 1.39e-03 | 9,384 tok/s | 15532.3s
+step4500 | loss 1.4477 | lr 1.27e-03 | 9,406 tok/s | 15880.7s
+[val] step4500 | val_loss 1.4210 | 15880.7s
+step4600 | loss 1.3809 | lr 1.18e-03 | 8,825 tok/s | 16252.0s
+step4700 | loss 1.4497 | lr 1.10e-03 | 9,373 tok/s | 16601.5s
+step4800 | loss 1.3537 | lr 1.04e-03 | 9,394 tok/s | 16950.3s
+step4900 | loss 1.3974 | lr 1.01e-03 | 9,376 tok/s | 17299.8s
+step5000 | loss 1.4301 | lr 1.00e-03 | 9,472 tok/s | 17645.8s
+  [val] step5000 | val_loss 1.4168 | 17645.8s
+[checkpoint] checkpoints/bs_128/checkpoint_0005000.pt
+Done. Final checkpoint: checkpoints/bs_128/checkpoint_final.pt

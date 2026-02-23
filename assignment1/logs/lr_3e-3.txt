@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/azureuser/cs336/assignment1/cs336_basics/training.py", line 564, in <module>
+    main()
+  File "/home/azureuser/cs336/assignment1/cs336_basics/training.py", line 326, in main
+    train_data = np.load(args.train_path, mmap_mode="r")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/azureuser/cs336/assignment1/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/data/encoded/tinystories_train.npy'
+Loading training data: /data/encoded/tinystories_train.npy
