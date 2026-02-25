@@ -1,5 +1,3 @@
-"""Text generation CLI: loads a checkpoint and generates text from a prompt."""
-
 import torch
 import torch.nn as nn
 
@@ -135,7 +133,11 @@ class Generator:
         ).to(device)
 
         ckpt = torch.load(checkpoint, map_location=device)
-        self.model.load_state_dict(ckpt["model_state_dict"])
+        state_dict = ckpt["model_state_dict"]
+        # torch.compile() adds "_orig_mod." prefix — strip it if present
+        if any(k.startswith("_orig_mod.") for k in state_dict):
+            state_dict = {k.removeprefix("_orig_mod."): v for k, v in state_dict.items()}
+        self.model.load_state_dict(state_dict)
         print(f"Loaded checkpoint: {checkpoint}  (step {ckpt.get('iteration', '?')})")
 
     def generate(
